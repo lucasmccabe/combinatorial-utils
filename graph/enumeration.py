@@ -9,6 +9,11 @@ def spanning_trees(G):
     Parameters
     ----------
     G : a networkx graph
+
+    Notes
+    -----
+    [1] Kirchhoff's theorem. Wikipedia. Retrieved from
+    https://en.wikipedia.org/wiki/Kirchhoff%27s_theorem.
     """
     Q = nx.laplacian_matrix(G).toarray()
     Q_star = Q[:-1,:-1]
