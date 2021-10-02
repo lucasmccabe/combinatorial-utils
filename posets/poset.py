@@ -1,5 +1,5 @@
 import itertools
-from posets.utils import *
+from combinatorial_zoo.posets.utils import *
 
 class Poset():
     """
