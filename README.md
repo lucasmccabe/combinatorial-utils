@@ -20,7 +20,7 @@ WIP Python library providing tools for combinatorial maths.
 This repo is organized as follows:
 
 ```bash
-combinatorial-zoo
+combinatorial_zoo
 ├── general  # general utilities, e.g. OEIS lookup
 ├── graph  # graph problems, e.g. counting spanning trees
 ├── posets    # constructing and analyzing partially-ordered set
