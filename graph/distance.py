@@ -18,7 +18,7 @@ def shortest_path(G, u, v, method = "Dijkstra"):
         Currently implemented:
             - "Dijkstra"
     """
-    if method == "Dijkstra":
+    if method.lower() == "dijkstra":
         distances = single_source_shortest_paths(G, u, method = "Dijkstra")
         return distances[v]
     else:
@@ -39,7 +39,7 @@ def single_source_shortest_paths(G, u, method = "Dijkstra"):
         Currently implemented:
             - "Dijkstra"
     """
-    if method == "Dijkstra":
+    if method.lower() == "dijkstra":
         return _single_source_shortest_paths_dijkstra(G, u)
     else:
         raise NotImplementedError
@@ -86,4 +86,4 @@ def _single_source_shortest_paths_dijkstra(G, u):
     for i in S:
         distances[list(G_old.nodes)[i]] = S[i]
 
-    return distance
+    return distances
