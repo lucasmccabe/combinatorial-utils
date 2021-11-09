@@ -14,21 +14,28 @@ def contract_edge(G, e):
     """
     u, v = e[:2]
     H = nx.MultiGraph()
+    n = max(G.nodes) + 1
+
     for edge in G.edges:
-        if u in edge and v not in edge:
+        if edge[0] == edge[1] and edge != e and edge[0] in (u, v):
+            H.add_edge(
+                n,
+                n
+            )
+        elif u in edge and v not in edge:
             H.add_edge(
                 edge[(edge.index(u)+1)%2],
-                len(G)+1
+                n
             )
         elif v in edge and u not in edge:
             H.add_edge(
                 edge[(edge.index(v)+1)%2],
-                len(G)+1
+                n
             )
-        elif v in edge and u in edge and edge != e:
+        elif v in edge[:2] and u in edge[:2] and edge != e:
             H.add_edge(
-                len(G)+1,
-                len(G)+1
+                n,
+                n
             )
         else:
             H.add_edge(*edge)
