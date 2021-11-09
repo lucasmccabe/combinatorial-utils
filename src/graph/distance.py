@@ -58,7 +58,7 @@ def _single_source_shortest_paths_dijkstra(G, u):
 
     Notes
     -----
-    [1] West, Douglas Brent. “Trees and Distance.” Essay. In Introduction to
+    [1] West, Douglas Brent. “Trees and Distance.” In Introduction to
     Graph Theory, 97–97. United States: Pearson, 2018.
     """
     G_old, u_old = G, u

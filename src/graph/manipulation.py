@@ -1,6 +1,40 @@
 import networkx as nx
 import numpy as np
 
+def contract_edge(G, e):
+    """
+    Creates a MultiGraph by contracting edge e of G.
+
+    Parameters
+    ----------
+    G : NetworkX graph
+
+    e : tuple
+        edge to contract
+    """
+    u, v = e[:2]
+    H = nx.MultiGraph()
+    for edge in G.edges:
+        if u in edge and v not in edge:
+            H.add_edge(
+                edge[(edge.index(u)+1)%2],
+                len(G)+1
+            )
+        elif v in edge and u not in edge:
+            H.add_edge(
+                edge[(edge.index(v)+1)%2],
+                len(G)+1
+            )
+        elif v in edge and u in edge and edge != e:
+            H.add_edge(
+                len(G)+1,
+                len(G)+1
+            )
+        else:
+            H.add_edge(*edge)
+    H.remove_nodes_from([u, v])
+    return H
+
 def multiply_edges(G, k):
     """
     Creates a new graph G_prime with k copies of each edge in G
