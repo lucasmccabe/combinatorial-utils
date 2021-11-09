@@ -7,7 +7,9 @@ WIP Python library providing tools for combinatorial maths (partially-ordered se
 ## Table of Contents
 * [Table of Contents](#table-of-contents)
 * [Repo Organization](#repo-organization)
+* [Setup](#setup)
 * [Example Usage](#example-usage)
+* [Requirements](#requirements)
 * [Contact](#contact)
 * [License](#license)
 
@@ -20,9 +22,14 @@ This repo is organized as follows:
 combinatorial_zoo
 ├── src
 │   ├── general  # general utilities, e.g. OEIS lookup
-│   ├── graph  # graph problems, e.g. counting spanning trees
-│   ├── posets    # constructing and analyzing partially-ordered set
+│   ├── graph  # graph problems, e.g. counting spanning trees, retrieving graph polynomials
+│   ├── posets    # constructing and analyzing partially-ordered sets
 ```
+
+## Setup
+
+1. Clone this repo
+2. cd into the `combinatorial_zoo` directory and run the following in your shell: ```pip install -r requirements.txt```
 
 
 ## Example Usage
@@ -51,6 +58,14 @@ tutte_C5.evaluate(2, 0)
 ```bash
 >>> 30
 ```
+
+## Requirements
+This project was created with:
+
+- `requests==2.24.0`
+- `numpy==1.19.5`
+- `sympy==1.6.2`
+- `networkx==2.5`
 
 
 ## Contact
