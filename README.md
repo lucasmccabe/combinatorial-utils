@@ -1,6 +1,6 @@
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
-# Combinatorial Zoo
+# TUSC 🐘: Toolbox for Understanding Some things in Combinatorics
 
 WIP Python library providing tools for combinatorial maths (partially-ordered sets, graph polynomials, etc.).
 
@@ -19,7 +19,7 @@ WIP Python library providing tools for combinatorial maths (partially-ordered se
 This repo is organized as follows:
 
 ```bash
-combinatorial_zoo
+tusc
 ├── src
 │   ├── general  # general utilities, e.g. OEIS lookup
 │   ├── graph  # graph problems, e.g. counting spanning trees, retrieving graph polynomials
@@ -29,7 +29,7 @@ combinatorial_zoo
 ## Setup
 
 1. Clone this repo
-2. cd into the `combinatorial_zoo` directory and run the following in your shell: ```pip install -r requirements.txt```
+2. cd into the `tusc` directory and run the following in your shell: ```pip install -r requirements.txt```
 
 
 ## Example Usage
@@ -37,11 +37,11 @@ combinatorial_zoo
 Retrieving the Tutte polynomial for the five-vertex cycle graph (C<sub>5</sub>):
 
 ```python
-import combinatorial_zoo as cz
+import tusc
 import networkx as nx
 
 C5 = nx.cycle_graph(5)
-tutte_C5 = cz.graph.polynomial.Tutte(C5)
+tutte_C5 = tusc.graph.polynomial.Tutte(C5)
 tutte_C5.polynomial
 ```
 
