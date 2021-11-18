@@ -22,8 +22,17 @@ This repo is organized as follows:
 tusc
 ├── src
 │   ├── general  # general utilities, e.g. OEIS lookup
+│   │   ├── utils
 │   ├── graph  # graph problems, e.g. counting spanning trees, retrieving graph polynomials
+│   │   ├── distance
+│   │   ├── enumeration
+│   │   ├── manipulation
+│   │   ├── matching
+│   │   ├── polynomial
 │   ├── posets    # constructing and analyzing partially-ordered sets
+│   │   ├── utils
+│   │   ├── example_posets
+│   │   ├── poset
 ```
 
 ## Setup
@@ -46,7 +55,7 @@ tutte_C5.polynomial
 ```
 
 ```bash
->>> 'x^4 + x^3 + x^2 + x + y'
+'x^4 + x^3 + x^2 + x + y'
 ```
 
 Evaluating the polynomial to find the number of acyclic orientations of C<sub>5</sub>:
@@ -56,7 +65,7 @@ tutte_C5.evaluate(2, 0)
 ```
 
 ```bash
->>> 30
+30
 ```
 
 ## Requirements
