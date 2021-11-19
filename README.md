@@ -6,34 +6,13 @@ WIP Python library providing tools for combinatorial maths (partially-ordered se
 
 ## Table of Contents
 * [Table of Contents](#table-of-contents)
-* [Repo Organization](#repo-organization)
 * [Setup](#setup)
 * [Example Usage](#example-usage)
+* [Repo Organization](#repo-organization)
 * [Requirements](#requirements)
 * [Contact](#contact)
 * [License](#license)
 
-
-## Repo Organization
-
-This repo is organized as follows:
-
-```bash
-tusc
-├── src
-│   ├── general  # general utilities, e.g. OEIS lookup
-│   │   ├── utils
-│   ├── graph  # graph problems, e.g. counting spanning trees, retrieving graph polynomials
-│   │   ├── distance
-│   │   ├── enumeration
-│   │   ├── manipulation
-│   │   ├── matching
-│   │   ├── polynomial
-│   ├── posets    # constructing and analyzing partially-ordered sets
-│   │   ├── utils
-│   │   ├── example_posets
-│   │   ├── poset
-```
 
 ## Setup
 
@@ -67,6 +46,30 @@ tutte_C5.evaluate(2, 0)
 ```bash
 30
 ```
+
+## Repo Organization
+
+This repo is organized as follows:
+
+```bash
+tusc
+├── src
+│   ├── general  # general utilities, e.g. OEIS lookup
+│   │   ├── utils
+│   ├── graph  # graph problems, retrieving graph polynomials
+│   │   ├── distance
+│   │   ├── enumeration  # enumerative problems, e.g. counting spanning trees
+│   │   ├── manipulation
+│   │   ├── matching
+│   │   ├── polynomial  # retrieving graph polynomials (e.g. Tutte, chromatic)
+│   ├── posets    # constructing and analyzing partially-ordered sets
+│   │   ├── utils
+│   │   ├── example_posets
+│   │   ├── poset
+├── tests
+│   ├── general
+```
+
 
 ## Requirements
 This project was created with:
