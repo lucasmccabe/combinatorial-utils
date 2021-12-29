@@ -28,10 +28,11 @@ class Tutte():
     """
     def __init__(self, G):
         """
+        Constructor for the Tutte polynomial class.
+
         Parameters
         ----------
         G : NetworkX graph
-
         """
         if G.is_directed():
             raise NotImplementedError
@@ -60,7 +61,6 @@ class Tutte():
         Parameters
         ----------
         x : float
-
         y : float
 
         Example Usage
@@ -96,16 +96,14 @@ class Tutte():
         loops = enumeration.get_loops(G)
         some_edges = [i for i in G.edges if i not in cut_edges and i not in loops]
 
-        #if len(cut_edges) + len(loops) == len(G.edges):
         if not some_edges:
             return self.x**len(cut_edges) * self.y**len(loops)
-        # pick an edge that isn't a cut edge or a loop
+
         e = some_edges[0]
         # deletion-contraction
         D = G.copy()
         D.remove_edge(*e) # delete
         C = manipulation.contract_edge(G, e) # contract
-        #C = nx.contracted_edge(G, e, self_loops = False)
         return self._generate_polynomial(D) + self._generate_polynomial(C)
 
     def _evaluate_polynomial(self, x, y):
@@ -129,19 +127,18 @@ class Chromatic():
     Get the chromatic polynomial for C_5, and calculate the number of 3-colorings:
 
         >>> C5 = nx.cycle_graph(5)
-        >>> tutte_C5 = cz.graph.polynomial.Tutte(C5)
-        >>> print(tutte_C5.polynomial)
+        >>> chromatic_C5 = tusc.graph.polynomial.Chromatic(G)
+        >>> print(chromatic_C5)
         'x**5 - 5*x**4 + 10*x**3 - 10*x**2 + 4*x'
-        >>> tutte_C5.evaluate(3)
-        30
 
     """
     def __init__(self, G):
         """
+        Constructor for the Chromatic polynomial class.
+
         Parameters
         ----------
         G : NetworkX graph
-
         """
         if G.is_directed():
             raise NotImplementedError
@@ -176,13 +173,17 @@ class Chromatic():
 
     def evaluate(self, x):
         """
-        Evaluates the chromati polynomial for the graph, given x, to find the
+        Evaluates the chromatic polynomial for the graph, given x, to find the
         number of x-colorings of the graph.
 
         Parameters
         ----------
         x : float
             coloring number
+
+        Raises
+        ------
+        ValueError : if the result is not int or float
         """
         result = self.polynomial.subs([(self.x, x)])
         if type(x) == int:

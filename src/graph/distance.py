@@ -17,6 +17,10 @@ def shortest_path(G, u, v, method = "Dijkstra"):
         the shortest path method you want to use.
         Currently implemented:
             - "Dijkstra"
+
+    Raises
+    ------
+    NotImplementedError : if selected method is not Dijkstra's algorithm
     """
     if method.lower() == "dijkstra":
         distances = single_source_shortest_paths(G, u, method = "Dijkstra")
