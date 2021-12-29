@@ -24,7 +24,7 @@ copyright = '2021, Lucas H. McCabe'
 author = 'Lucas H. McCabe'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.1'
+release = '0.0.2'
 
 
 # -- General configuration ---------------------------------------------------
@@ -65,6 +65,7 @@ html_theme_options = {
 }
 html_theme_options = {
   "external_links": [
+      ("PyPI", "https://pypi.org/project/tusc"),
       ("Github", "https://github.com/lucasmccabe/tusc"),
       ("Author", "https://lucasmccabe.github.io"),
   ]

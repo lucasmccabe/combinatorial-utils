@@ -3,14 +3,22 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. image:: _static/elephant_header.png
+  :scale: 40 %
+  :align: center
+
 Welcome to tusc's documentation!
 ================================
 
-.. image:: _static/elephant.png
-   :scale: 60 %
-   :align: left
-
 **tusc** is a WIP Python library providing tools for combinatorial maths.
+
+
+Installation
+---------------
+
+::
+
+    pip install tusc
 
 
 Table of Contents

@@ -1,3 +1,4 @@
+[![PyPI version](https://badge.fury.io/py/tusc.svg)](https://badge.fury.io/py/tusc)
 [![Documentation Status](https://readthedocs.org/projects/tusc/badge/?version=latest)](https://tusc.readthedocs.io/en/latest/?badge=latest)
 [![Build Status](https://app.travis-ci.com/lucasmccabe/tusc.svg?branch=main)](https://app.travis-ci.com/lucasmccabe/tusc)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
@@ -6,11 +7,11 @@
 
 > WIP Python library providing tools for combinatorial maths (partially-ordered sets, graph polynomials, etc.).
 
-![elephant_header](assets/elephant_header.png)
+![elephant_header](https://raw.githubusercontent.com/lucasmccabe/tusc/main/assets/elephant_header.png)
 
 ## Table of Contents
 * [Table of Contents](#table-of-contents)
-* [Setup](#setup)
+* [Installation](#installation)
 * [Example Usage](#example-usage)
 * [Repo Organization](#repo-organization)
 * [Requirements](#requirements)
@@ -18,10 +19,15 @@
 * [License](#license)
 
 
-<!-- ## Setup
+## Setup
 
-1. Clone this repo
-2. cd into the `tusc` directory and run the following in your shell: ```pip install -r requirements.txt``` -->
+### With pip:
+
+```bash
+pip install tusc
+```
+
+###### *(FYSA: this repository is tested on Python 3.8 only)*
 
 
 ## Example Usage

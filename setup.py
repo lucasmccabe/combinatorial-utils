@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf8") as fh:
 
 setup(
     name="tusc",
-    version="0.0.1",
+    version="0.0.2",
     author="Lucas H. McCabe",
     author_email="lucasmccabe@gwu.edu",
     description="a Python library providing tools for combinatorial maths",
