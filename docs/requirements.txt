@@ -1,0 +1,6 @@
+sphinx_automodapi==0.12
+numpydoc==0.7.0
+requests==2.24.0
+numpy==1.19.5
+sympy==1.6.2
+networkx==2.5
