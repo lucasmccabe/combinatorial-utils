@@ -3,7 +3,7 @@ API Reference
 =============
 
 
-.. currentmodule:: src
+.. currentmodule:: tusc
 
 
 Contents

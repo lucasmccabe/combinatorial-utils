@@ -57,7 +57,7 @@ This repo is organized as follows:
 
 ```bash
 tusc
-├── src
+├── tusc
 │   ├── general  # general utilities, e.g. OEIS lookup
 │   │   ├── utils
 │   ├── graph  # graph problems, retrieving graph polynomials
@@ -72,6 +72,8 @@ tusc
 │   │   ├── poset
 ├── tests
 │   ├── general
+├── assets
+├── docs
 ```
 
 

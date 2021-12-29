@@ -1,6 +1,6 @@
 import unittest
 
-from src import general
+from tusc import general
 
 class TestUtils(unittest.TestCase):
 
