@@ -36,7 +36,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.napoleon',
-    'numpydoc'
+    'numpydoc',
 ]
 
 autosummary_generate = True
@@ -63,6 +63,14 @@ html_theme_options = {
     'description': 'a  WIP Python library providing tools for combinatorial maths',
     'travis_button': 'true'
 }
+html_theme_options = {
+  "external_links": [
+      ("Github", "https://github.com/lucasmccabe/tusc"),
+      ("Author", "https://lucasmccabe.github.io"),
+  ]
+}
+
+html_logo = '_static/elephant_header.png'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

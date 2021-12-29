@@ -3,7 +3,9 @@
 
 # TUSC 🐘: Toolbox for Understanding Some things in Combinatorics
 
-WIP Python library providing tools for combinatorial maths (partially-ordered sets, graph polynomials, etc.).
+> WIP Python library providing tools for combinatorial maths (partially-ordered sets, graph polynomials, etc.).
+
+![elephant_header](assets/elephant_header.png)
 
 ## Table of Contents
 * [Table of Contents](#table-of-contents)

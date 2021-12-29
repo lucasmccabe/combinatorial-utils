@@ -6,13 +6,11 @@
 Welcome to tusc's documentation!
 ================================
 
-.. image:: elephant.png
+.. image:: _static/elephant.png
    :scale: 60 %
    :align: left
 
 **tusc** is a WIP Python library providing tools for combinatorial maths.
-
-The code can be found on GitHub_.
 
 
 Table of Contents
@@ -25,7 +23,3 @@ Table of Contents
 
 
 * :ref:`genindex`
-
-
-
-.. _GitHub: https://github.com/lucasmccabe/tusc
