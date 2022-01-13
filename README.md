@@ -1,6 +1,7 @@
 [![PyPI version](https://badge.fury.io/py/tusc.svg)](https://badge.fury.io/py/tusc)
 [![Documentation Status](https://readthedocs.org/projects/tusc/badge/?version=latest)](https://tusc.readthedocs.io/en/latest/?badge=latest)
 [![Build Status](https://app.travis-ci.com/lucasmccabe/tusc.svg?branch=main)](https://app.travis-ci.com/lucasmccabe/tusc)
+[![Downloads](https://pepy.tech/badge/tusc)](https://pepy.tech/project/tusc)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
 # TUSC 🐘: Toolbox for Understanding Some things in Combinatorics
